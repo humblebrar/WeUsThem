@@ -26,7 +26,8 @@ namespace emailClient
         {
             Task.Run(() =>
             {
-                using (ImapClient client = new ImapClient("imap.gmail.com", 993, "singhrock536@gmail.com", "98765432123", AuthMethod.Login, true))
+            //please enter your email address and password below:
+                using (ImapClient client = new ImapClient("imap.gmail.com", 993, "email", "Password", AuthMethod.Login, true))
                 {
                     if (client.Supports("IDLE") == false)
                     {
